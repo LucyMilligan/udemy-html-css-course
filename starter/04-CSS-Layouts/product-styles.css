@@ -9,6 +9,18 @@ body {
   line-height: 1.4;
 }
 
+.clearfix::after {
+  /* fixing the collapsed container */
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.container {
+  /* collapsed element - all child elements are floated */
+  /* background-color: yellow; */
+}
+
 /* PRODUCT */
 .product {
   border: 4px solid #000000;
@@ -31,7 +43,8 @@ body {
   margin-right: 40px;
 }
 
-.description-container {
+.product-info {
+  /* column-width = (825(width)-4-4(borders)-250(image)-40-40(spacing)) / 2 */
   float: left;
   width: 243px;
   margin-right: 40px;
@@ -49,12 +62,13 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
+  margin-top: 8px;
   float: right;
 }
 
-.description-body {
+/* .description-body {
   clear: both;
-}
+} */
 
 .sale-label {
   color: rgb(255, 255, 255);
@@ -72,6 +86,7 @@ body {
 
 .description {
   margin-bottom: 10px;
+  clear: both;
 }
 
 .more-info:link,
@@ -115,8 +130,8 @@ body {
 }
 
 /* PRODUCT DETAILS */
-.details-container {
-  float: right;
+.product-details {
+  float: left;
   width: 243px;
   margin-top: 25px;
 }
