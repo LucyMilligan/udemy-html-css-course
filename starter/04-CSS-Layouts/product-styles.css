@@ -19,6 +19,9 @@ body {
 .container {
   /* collapsed element - all child elements are floated */
   /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 /* PRODUCT */
@@ -39,21 +42,30 @@ body {
 
 /* PRODUCT INFORMATION */
 .product-img {
-  float: left;
-  margin-right: 40px;
+  /* float: left;
+  margin-right: 40px; */
+  flex: 1;
 }
 
 .product-info {
   /* column-width = (825(width)-4-4(borders)-250(image)-40-40(spacing)) / 2 */
-  float: left;
+  /* float: left;
   width: 243px;
   margin-right: 40px;
-  margin-top: 25px;
+  margin-top: 25px; */
+  flex: 1;
 }
 
 .price {
   font-size: 24px;
-  float: left;
+  /* float: left; */
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .shipping {
@@ -61,9 +73,9 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
-  margin-top: 8px;
-  float: right;
+  /* margin-bottom: 20px; */
+  /* margin-top: 8px; */
+  /* float: right; */
 }
 
 /* .description-body {
@@ -101,12 +113,17 @@ body {
   text-decoration: none;
 }
 
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
 .color {
   width: 22px;
   height: 22px;
   background-color: black;
-  display: inline-block;
-  margin-right: 10px;
+  /* display: inline-block; */
+  /* margin-right: 10px; */
 }
 
 .blue-color {
@@ -131,9 +148,10 @@ body {
 
 /* PRODUCT DETAILS */
 .product-details {
-  float: left;
+  /* float: left;
   width: 243px;
-  margin-top: 25px;
+  margin-top: 25px; */
+  flex: 1;
 }
 
 .details-title {
